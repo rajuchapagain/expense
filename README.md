@@ -1,5 +1,5 @@
 
-This is a project I completed by following the youtube series: https://www.youtube.com/watch?v=MSTYmdzlU-c&ab_channel=AsielAlvarez
+## This is a project I completed by following the youtube series: https://www.youtube.com/watch?v=MSTYmdzlU-c&ab_channel=AsielAlvarez
 
 This was one of the project I followed to learn React and added few features to enhance my understanding. 
 
