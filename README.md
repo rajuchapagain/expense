@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+This is a project I completed by following the youtube series: https://www.youtube.com/watch?v=MSTYmdzlU-c&ab_channel=AsielAlvarez
+
+This was one of the project I followed to learn React and added few features to enhance my understanding. 
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
