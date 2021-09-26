@@ -4,10 +4,9 @@ import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import * as serviceWorker from "./serviceWorker";
+import { store } from "./redux/store";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "react-toastify/dist/ReactToastify.css";
-import store from "./redux/store";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
