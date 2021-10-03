@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { SetAuthenticated } from "./services/authentication.service";
 import NavbarComponent from "./components/Navbar";
 import ExpenseStatistics from "./components/Expenses/ExpenseStatistics";
+import UserListTile from "./components/Users/UserList.tile";
 
 const App = () => {
   const { isLoggedIn } = useSelector((state) => state.authenticationReducer);
@@ -43,6 +44,10 @@ const App = () => {
         <Route
           path="/users"
           render={() => (isLoggedIn ? <UserList /> : <SignInPage />)}
+        />
+        <Route
+          path="/userstile"
+          render={() => (isLoggedIn ? <UserListTile /> : <SignInPage />)}
         />
         <Route component={() => <h2>Page not found!</h2>} />
       </Switch>

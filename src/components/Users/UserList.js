@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import MaterialTable from "material-table";
 import { GetRegisteredUsers } from "../../services/users.service";
@@ -55,10 +56,18 @@ const UserList = () => {
 
   return (
     <div className="container">
+      <a href="/userstile">Click to view new design</a>
       <MaterialTable
         icons={tableIcons}
         title="Registered User List"
         columns={[
+          {
+            title: "",
+            field: "imgSrc",
+            render: (item) => (
+              <img src={item.imgSrc} alt="" height="50" width="50" />
+            ),
+          },
           { title: "Name", field: "fullName", export: true },
           { title: "Email", field: "email", export: true },
           { title: "Username", field: "userName", export: true },

@@ -17,9 +17,9 @@ export const SignIn = async (dispatch, user) => {
   }
 };
 
-export const SignUp = async (dispatch, user) => {
+export const SignUp = async (dispatch, formData) => {
   try {
-    const { data } = await axiosInstance.post("/signup", user);
+    const { data } = await axiosInstance.post("/signup", formData);
 
     dispatch(AuthenticationActions.signUp(data));
     toast.success("User registered successfully");
